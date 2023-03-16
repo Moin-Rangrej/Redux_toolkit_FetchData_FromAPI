@@ -5,8 +5,6 @@ import { useSelector } from 'react-redux'
 const Navbar = () => {
     const count = useSelector(state => state.countnum.count)
     const cakecount = useSelector(state => state.cake.numOfcake)
-    console.log("from navbar" , count + cakecount);
-    console.log("from navbar" , cakecount);
   return (
     <div style={{backgroundColor : 'lightblue',height:"100px",width:"auto",margin:'20px'}}>
       <div style={{backgroundColor: "green",height:'25px',width:'100px',textAlign:'center',borderRadius:'10px',float:'right',margin:'10px'}}>Cart
